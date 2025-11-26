@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Sunshine - Mission Brief</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Starfield Background -->
+    <div class="starfield"></div>
+    
+    <!-- Ambient Light Effects -->
+    <div class="ambient-light light-1"></div>
+    <div class="ambient-light light-2"></div>
+    <div class="ambient-light light-3"></div>
+    
+    <!-- Parallax Sun -->
+    <div class="parallax-sun"></div>
+    
+    <!-- Particle System -->
+    <canvas id="particles"></canvas>
+    
+    <!-- Scanlines Effect -->
+    <div class="scanlines"></div>
+    
+    <!-- Main Container -->
+    <div class="container">
+        
+        <!-- Hero Section with 3D Title -->
+        <section class="hero">
+            <div class="title-3d">
+                <div class="title-badge">A Social Experiment</div>
+                <h1 class="glitch" data-text="HELLO SUNSHINE">HELLO SUNSHINE</h1>
+                <div class="subtitle">MISSION CLASSIFICATION: HUMAN CONNECTION</div>
+                <div class="mission-code">AREA CODE: 757</div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-module">
+                    <span class="stat-label">DURATION</span>
+                    <span class="stat-value">28 DAYS</span>
+                </div>
+                <div class="stat-module">
+                    <span class="stat-label">OBJECTIVE</span>
+                    <span class="stat-value">RECONNECT</span>
+                </div>
+                <div class="stat-module">
+                    <span class="stat-label">STATUS</span>
+                    <span class="stat-value glow-text">RECRUITING</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Brief -->
+        <section class="mission-brief hologram-panel">
+            <div class="panel-header">
+                <span class="icon">◈</span>
+                <h2>MISSION BRIEF</h2>
+                <span class="icon">◈</span>
+            </div>
+            <div class="panel-content">
+                <p class="mission-text">
+                <strong class="highlight">HELLO SUNSHINE</strong>, is a 4-week experimental protocol designed to test a critical hypothesis: the myth of generational disconnect.
+                </p>
+                <p class="mission-text">
+                    This is not just a social experiment. It's a mission to prove that human connection transcends age, background, and circumstance. 
+                    Your participation will help us chart a course toward <strong class="highlight">expansion across the Peninsula</strong>.
+                </p>
+            </div>
+            <div class="hologram-border"></div>
+        </section>
+
+        <!-- Protocol Rules -->
+        <section class="protocols">
+            <div class="section-title">
+                <h2>MISSION PROTOCOLS</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="protocols-grid">
+                <div class="protocol-module">
+                    <div class="module-icon">☀️</div>
+                    <div class="module-title">DAILY CHECK-IN</div>
+                    <div class="module-description">
+                        Making contact every morning. Share gratitude. Maintain a human connection.
+                </div>
+
+                <div class="protocol-module">
+                    <div class="module-icon">🌟</div>
+                    <div class="module-title">WEEKEND SYNCHRONIZATION</div>
+                    <div class="module-description">
+                        Engage in shared activities. Build memories. Strengthen generational bonds.
+                </div>
+
+                <div class="protocol-module">
+                    <div class="module-icon">🍽️</div>
+                    <div class="module-title">SHARED FOOD</div>
+                    <div class="module-description">
+                        Break bread together. Share stories. Nourish connections over small meals.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expansion Map -->
+        <section class="expansion-map hologram-panel">
+            <div class="panel-header">
+                <span class="icon">⬡</span>
+                <h2>EXPANSION OBJECTIVE</h2>
+                <span class="icon">⬡</span>
+            </div>
+            <div class="panel-content">
+                <div class="map-container">
+                    <div class="expansion-visual">
+                        <div class="central-node pulse">
+                            <span>ORIGIN</span>
+                        </div>
+                        <div class="expansion-ring ring-1"></div>
+                        <div class="expansion-ring ring-2"></div>
+                        <div class="expansion-ring ring-3"></div>
+                        <div class="satellite-nodes">
+                            <div class="node node-1"></div>
+                            <div class="node node-2"></div>
+                            <div class="node node-3"></div>
+                            <div class="node node-4"></div>
+                            <div class="node node-5"></div>
+                            <div class="node node-6"></div>
+                        </div>
+                    </div>
+                    <div class="expansion-goal">
+                        <h3 class="glow-text">TARGET: GAIN NOTORIETY ACROSS THE PENINSULA</h3>
+                        <p>After the first 28 days, we’ll start spreading these connections across the entire Peninsula turning places that once felt isolated into communities full of warmth, support, and real human connection.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="hologram-border"></div>
+        </section>
+
+        <!-- Hypothesis Section -->
+        <section class="hypothesis-section">
+            <div class="section-title">
+                <h2>HYPOTHESIS INPUT</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="hypothesis-container hologram-panel">
+                <div class="panel-header">
+                    <span class="icon">◆</span>
+                    <h2>SUBMIT YOUR HYPOTHESIS</h2>
+                    <span class="icon">◆</span>
+                </div>
+                <div class="panel-content">
+                    <div class="hypothesis-intro">
+                        <p class="mission-text">
+                            We hypothesize that <strong class="highlight">daily check-ins, 
+                            weekend activities, and shared meals can reduce isolation and prove generational connection is possible</strong>.
+                        </p>
+                        <p class="mission-text">
+                            Do you believe this mission will succeed? Share your hypothesis and become part of the research data.
+                        </p>
+                    </div>
+                    
+                    <form class="hypothesis-form" id="hypothesisForm">
+                        <div class="form-section">
+                            <label class="form-label">MISSION OUTCOME PREDICTION</label>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="belief" value="strongly-agree" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">Strongly Agree - Mission Will Succeed</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="belief" value="agree" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">Agree - Likely Positive Outcome</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="belief" value="neutral" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">Neutral - Uncertain Results</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="belief" value="disagree" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">Disagree - Skeptical of Success</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <label for="reasoning" class="form-label">YOUR REASONING (OPTIONAL)</label>
+                            <textarea 
+                                id="reasoning" 
+                                name="reasoning" 
+                                class="form-textarea"
+                                placeholder="Share your thoughts on why this mission will or won't achieve its objective..."
+                                rows="5"
+                            ></textarea>
+                        </div>
+
+                        <div class="form-section">
+                            <label for="name" class="form-label">NAME (OPTIONAL)</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                class="form-input"
+                                placeholder="Your name or callsign..."
+                            >
+                        </div>
+
+                        <div class="form-section">
+                            <label for="email" class="form-label">EMAIL (OPTIONAL)</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                class="form-input"
+                                placeholder="Your email for mission updates..."
+                            >
+                        </div>
+
+                        <button type="submit" class="submit-button">
+                            <span class="button-glow"></span>
+                            <span class="button-text">⬡ SEND HYPOTHESIS ⬡</span>
+                        </button>
+
+                        <div class="form-status" id="formStatus"></div>
+                    </form>
+
+                    <div class="hypothesis-stats">
+                        <div class="stat-box">
+                            <div class="stat-number glow-text">237</div>
+                            <div class="stat-description">Hypotheses Submitted</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number" style="color: var(--warm-gold);">78%</div>
+                            <div class="stat-description">Predict Mission Success</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number" style="color: var(--neon-cyan);">92%</div>
+                            <div class="stat-description">Believe in Connection</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hologram-border"></div>
+            </div>
+        </section>
+
+        <!-- Power Core / Donations -->
+        <section class="power-core">
+            <div class="section-title">
+                <h2>MISSION POWER CORE</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="core-container hologram-panel">
+                <div class="panel-content">
+                    <div class="core-visual">
+                        <div class="energy-core">
+                            <div class="core-ring ring-outer"></div>
+                            <div class="core-ring ring-middle"></div>
+                            <div class="core-ring ring-inner"></div>
+                            <div class="core-center pulse"></div>
+                        </div>
+                    </div>
+                    <div class="core-text">
+                        <h3>MAKE A DONATION</h3>
+                        <p>Support the Hello Sunshine mission and help us bring people together across generations. 
+                        Your donation funds weekend activities, shared meals, and community expansion efforts.</p>
+                        
+                        <div class="donation-buttons">
+                            <button class="energy-button" data-amount="25">
+                                <span class="button-glow"></span>
+                                <span class="button-text">$25</span>
+                            </button>
+                            <button class="energy-button" data-amount="50">
+                                <span class="button-glow"></span>
+                                <span class="button-text">$50</span>
+                            </button>
+                            <button class="energy-button" data-amount="100">
+                                <span class="button-glow"></span>
+                                <span class="button-text">$100</span>
+                            </button>
+                            <button class="energy-button custom" data-amount="custom">
+                                <span class="button-glow"></span>
+                                <span class="button-text">CUSTOM</span>
+                            </button>
+                        </div>
+                        
+                        <div class="energy-stats">
+                            <div class="stat">
+                                <span class="stat-icon">💰</span>
+                                <span class="stat-info">
+                                    <strong>$2,450</strong> Raised
+                                </span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-icon">❤️</span>
+                                <span class="stat-info">
+                                    <strong>47</strong> Donors
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hologram-border"></div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="mission-footer">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>MISSION CONTROL</h4>
+                    <p>Hello Sunshine Initiative</p>
+                    <p>Reconnection Protocol Division</p>
+                </div>
+                <div class="footer-section">
+                    <h4>TRANSMISSION</h4>
+                    <p>contact@hellosunshine.mission</p>
+                    <p>Earth Standard Time Zone</p>
+                </div>
+                <div class="footer-section">
+                    <h4>COORDINATES</h4>
+                    <p>Peninsula Region</p>
+                    <p>Sector: Community Outreach</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>⬡ MISSION YEAR 2025 ⬡ PROVING HUMANITY ACROSS GENERATIONS ⬡</p>
+            </div>
+        </footer>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
